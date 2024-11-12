@@ -1,22 +1,22 @@
-# class Car:
-#     def __init__(self,yearModel:int,make: str ,speed:int):
-#         self.yearModel=yearModel
-#         self.make=make
-#         self.speed=speed
-#     def accelerate(self):
-#         self.speed+=5
-#     def brake(self):
-#         self.speed-=5
-# car1= Car(2006,'mustang',200)
-# print(car1.speed)
-# car1.accelerate()
-# car1.accelerate()
-# car1.accelerate()
-# print(car1.speed)
-# car1.brake()
-# car1.brake()
-# car1.brake()
-# print(car1.speed)
+class Car:
+    def __init__(self,yearModel:int,make: str ,speed:int):
+        self.yearModel=yearModel
+        self.make=make
+        self.speed=speed
+    def accelerate(self):
+        self.speed+=5
+    def brake(self):
+        self.speed-=5
+car1= Car(2006,'mustang',200)
+print(car1.speed)
+car1.accelerate()
+car1.accelerate()
+car1.accelerate()
+print(car1.speed)
+car1.brake()
+car1.brake()
+car1.brake()
+print(car1.speed)
 
 
 # Task2
@@ -45,9 +45,6 @@ class Sheep(Animal):
     def __init__(self,species,speed,weight,food_required,wool_color:str):
         super().__init__(species,speed,weight,food_required)
         self.wool_color=wool_color
-
-    def colorchange(self):
-        self.wool_color=input('What color is sheep: ')
 
 class Dog(Animal):
 
